@@ -1,0 +1,14 @@
+{
+  "name": "bugsfunny",
+  "version": "0.0.0",
+  "description": "Bugsfunny is a bug tracker that works along with git and has a Web GUI",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "juliansoto",
+  "license": "ISC",
+  "bin": {
+    "bugsfunny": "./cli.js"
+  }
+}
