@@ -2,7 +2,7 @@ module.exports = (filename = '') => {
   const randomString = Math.floor(Math.random() * 2 ** 32).toString(16);
 
   if (!filename) {
-    return randomString;
+    return randomString + '.json';
   }
   return (
     filename
