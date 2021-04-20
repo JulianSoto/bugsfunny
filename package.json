@@ -4,7 +4,7 @@
   "description": "Bugsfunny is a bug tracker that works along with git and has a Web GUI",
   "main": "cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "juliansoto",
   "license": "ISC",
