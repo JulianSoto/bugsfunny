@@ -1,18 +1,11 @@
 const fs = require('fs/promises');
 const path = require('path');
-const simpleGit = require('simple-git/promise');
 const asTable = require('as-table');
-
-const git = simpleGit();
+const getIssuesDirectory = require('../../getIssuesDirectory');
 
 module.exports = async (options) => {
   const includeAllIssues = !options.open && !options.closed;
-
-  const issuesDirectory = path.join(
-    await git.revparse('--show-toplevel'),
-    '.bugsfunny'
-  );
-
+  const issuesDirectory = await getIssuesDirectory();
   const files = await fs.readdir(issuesDirectory);
 
   const issues = await Promise.all(
