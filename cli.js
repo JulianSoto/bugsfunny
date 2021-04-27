@@ -19,7 +19,7 @@ program
   .description('create a new issue')
   .option('-d, --description <description>', 'description of the issue', '')
   .option(
-    '-a, --assignedTo <assignedTo>',
+    '-a, --assigned-to <assignedTo>',
     'assign the issue to some contributor',
     null
   )
