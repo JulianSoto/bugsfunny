@@ -4,6 +4,7 @@ const { Command } = require('commander');
 const list = require('./src/cli/actions/list');
 const create = require('./src/cli/actions/create');
 const edit = require('./src/cli/actions/edit');
+const checkout = require('./src/cli/actions/checkout');
 
 const program = new Command();
 
@@ -47,5 +48,10 @@ program
   .option('--add-label <label>', 'add a label to the label list')
   .option('--remove-label <label>', 'remove label if exists in label list')
   .action(edit);
+
+program
+  .command('checkout <issue>')
+  .description('show a complete description of an issue')
+  .action(checkout);
 
 program.parse();
