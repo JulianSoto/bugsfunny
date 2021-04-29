@@ -1,6 +1,6 @@
 {
   "name": "bugsfunny",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Bugsfunny is a bug tracker that works along with git and has a Web GUI",
   "main": "cli.js",
   "scripts": {
@@ -12,6 +12,8 @@
     "bugsfunny": "./cli.js"
   },
   "dependencies": {
+    "as-table": "^1.0.55",
+    "commander": "^7.2.0",
     "simple-git": "^2.38.0"
   },
   "devDependencies": {
