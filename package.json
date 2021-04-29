@@ -1,6 +1,6 @@
 {
   "name": "bugsfunny",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bugsfunny is a bug tracker that works along with git and has a Web GUI",
   "main": "cli.js",
   "scripts": {
