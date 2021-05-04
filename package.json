@@ -4,7 +4,12 @@
   "description": "Bugsfunny is a bug tracker that works along with git and has a Web GUI",
   "main": "cli.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "clone-gui-repo": "git clone https://github.com/JulianSoto/bugsfunny-gui.git",
+    "install-gui": "cd bugsfunny-gui && yarn install --production && cd ..",
+    "build-gui": "cd bugsfunny-gui && yarn build && mv build .. && cd ..",
+    "remove-gui-repo": "rm -dr --force bugsfunny-gui/",
+    "prepare": "npm run clone-gui-repo && npm run install-gui && npm run build-gui && npm run remove-gui-repo"
   },
   "author": "juliansoto",
   "license": "ISC",
