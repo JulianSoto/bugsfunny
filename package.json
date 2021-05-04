@@ -19,6 +19,7 @@
   "dependencies": {
     "as-table": "^1.0.55",
     "commander": "^7.2.0",
+    "node-static": "^0.7.11",
     "simple-git": "^2.38.0"
   },
   "devDependencies": {

@@ -5,6 +5,7 @@ const list = require('./src/cli/actions/list');
 const create = require('./src/cli/actions/create');
 const edit = require('./src/cli/actions/edit');
 const checkout = require('./src/cli/actions/checkout');
+const gui = require('./src/cli/actions/gui');
 
 const program = new Command();
 
@@ -53,5 +54,10 @@ program
   .command('checkout <issue>')
   .description('show a complete description of an issue')
   .action(checkout);
+
+program
+  .command('gui')
+  .description('open bugsfunny GUI in a browser tab')
+  .action(gui);
 
 program.parse();
